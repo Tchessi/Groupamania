@@ -89,7 +89,7 @@ export default {
   font-weight: 500;
   border: none;
   color: #000;
-  top: 20px;
+  top: 50px;
   right: 45px;
   height: 45px;
   padding: 5px 5px 5px 16px;
@@ -132,7 +132,7 @@ export default {
   margin-left: 8px;
 }
 #profile-collapsed {
-  top: 62px;
+  top: 95px;
   right: 44px;
   z-index: 1;
 }

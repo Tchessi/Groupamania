@@ -94,9 +94,9 @@ export default {
       this.notificationsList = res.notifications;
     },
     async deleteNotification(notificationToDelete) {
-      // const res = await apiClient.delete(
-      //   `api/notifications/${notificationToDelete.id}`
-      // );
+      const res = await apiClient.delete(
+        `api/notifications/${notificationToDelete.id}`
+      );
       this.notificationsList = this.notificationsList.filter(
         (notification) => notification.id !== notificationToDelete.id
       );
@@ -107,7 +107,7 @@ export default {
 
 <style lang="scss">
 .notification-btn {
-  top: 22px;
+  top: 50px;
   right: 175px;
   box-shadow: 0px 1px 1px 1px rgba(204, 204, 204, 0.2);
   background-color: rgba(108, 117, 125, 0.1) !important;

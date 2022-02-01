@@ -1,6 +1,6 @@
 <template>
   <div>
-    <b-form @submit="onSubmit">
+    <b-form v-on:submit="onSubmit">
       <PostForm
         @onFileSelected="onFileSelected"
         v-model="content"
@@ -38,7 +38,7 @@ export default {
         selectedFile: this.selectedFile,
         content: this.content,
       });
-      this.displayNotification('Publication créée !');
+      this.displayNotification('Publication créée!');
       this.resetForm(event);
     },
     resetForm(event) {

@@ -129,14 +129,14 @@
 <script>
 import { apiClient } from '../services/apiClient';
 import ProfileImage from '../components/ProfileImage';
-// import PostsList from '../components/PostsList';
+import PostsList from '../components/PostsList';
 import Menu from '../components/Menu';
 import UserDeleteAccount from '../components/UserDeleteAccount';
 export default {
   name: 'Profile',
   components: {
     ProfileImage,
-    // PostsList,
+    PostsList,
     Menu,
     UserDeleteAccount,
   },

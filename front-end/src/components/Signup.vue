@@ -110,7 +110,7 @@ export default {
             if (error.error) {
               return (this.errorMessage = error.error.errors[0].message);
             }
-            this.errorMessage = 'sProblème de connexion';
+            this.errorMessage = 'Problème de connexion';
           });
       } else {
         this.errorMessage = 'Veuillez renseigner les champs ci-dessus :-(';

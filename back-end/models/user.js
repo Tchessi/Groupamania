@@ -55,11 +55,11 @@ module.exports = (sequelize, DataTypes) => {
           ensurePasswordIsStrongEnough,
         },
       },
-      // imageUrl: DataTypes.STRING,
-      // deleted: {
-      //   type: DataTypes.BOOLEAN,
-      //   defaultValue: false,
-      // },
+      imageUrl: DataTypes.STRING,
+      deleted: {
+        type: DataTypes.BOOLEAN,
+        defaultValue: false,
+      },
       admin: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,

@@ -15,8 +15,8 @@
 </template>
 
 <script>
-// import { apiClient } from '../services/ApiClient';
-// import { mapActions } from 'vuex';
+import { apiClient } from '../services/apiClient';
+import { mapActions } from 'vuex';
 export default {
   name: 'DeleteAccountButton',
   data() {

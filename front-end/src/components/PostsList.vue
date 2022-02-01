@@ -11,7 +11,7 @@
 </template>
 
 <script>
-// import router from '../router/index';
+import router from '../router/index';
 import { mapState, mapActions } from 'vuex';
 import Post from './Post';
 export default {

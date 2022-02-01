@@ -14,7 +14,7 @@
           :value="value"
           @input="updateValue"
           id="content"
-          :placeholder="`Que voulez-vous partager, ${userData.firstName} ?`"
+          :placeholder="`Quoi de neuf, ${userData.firstName} ?`"
           aria-label="Écrire une publication"
           class="text-dark mb-2 mr-2 w-100"
         ></b-form-textarea>

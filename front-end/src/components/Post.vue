@@ -107,7 +107,7 @@
 
 <script>
 import { apiClient } from '../services/apiClient';
-// import router from '../router/index';
+import router from '../router/index';
 import EditPost from '../components/EditPost';
 import ProfileImage from './ProfileImage';
 import CommentsList from '../components/CommentsList';
