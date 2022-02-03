@@ -6,7 +6,7 @@
         aria-label="Supprimer le compte"
       >
         <p @click="onDeleteAccount" class="my-3 mr-1 mr-lg-2">
-          Supprimer le compte
+          Supprimer votre compte
         </p>
         <b-icon icon="trash"></b-icon>
       </button>
@@ -39,6 +39,7 @@ export default {
   background-color: transparent;
   border: none;
   &:hover {
+    color: red;
     text-decoration: underline;
   }
   &:focus {

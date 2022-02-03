@@ -1,5 +1,6 @@
 <template>
   <div class="page-container">
+    <div>Avec Groupomania, restez en contact avec votre équipe.</div>
     <b-container fluid>
       <b-row class="text-center justify-content-center">
         <b-col cols="12" lg="4">

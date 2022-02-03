@@ -65,7 +65,7 @@ export default {
 
 <style lang="scss">
 .comment-area {
-  background-color: rgba(108, 117, 125, 0.1);
+  background-color: #3d3d3d1c;
 }
 .div-comment-picture {
   width: 45px;

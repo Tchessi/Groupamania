@@ -5,9 +5,9 @@
       class="profile-btn d-flex position-fixed justify-content-center justify-content-lg-between align-items-center"
       aria-label="Afficher les actions"
     >
-      <span class="name-profile-btn d-none d-lg-block">{{
-        userData.firstName
-      }}</span>
+      <span class="name-profile-btn d-none d-lg-block"
+        ><strong>{{ userData.firstName }}</strong></span
+      >
       <ProfileImage
         :src="userData.imageUrl"
         customClass="profile-btn__img"
@@ -89,12 +89,11 @@ export default {
   font-weight: 500;
   border: none;
   color: #000;
-  top: 50px;
+  top: 150px;
   right: 45px;
   height: 45px;
   padding: 5px 5px 5px 16px;
-  box-shadow: 0px 1px 1px 1px rgba(204, 204, 204, 0.2);
-  background-color: rgba(108, 117, 125, 0.1) !important;
+  background-color: #3d3d3d1c !important;
   border-radius: 40px;
   z-index: 2;
   &:focus {
@@ -103,6 +102,7 @@ export default {
   &:hover,
   &:visited {
     background-color: rgba(108, 117, 125, 0.2) !important;
+    border: 1px solid #17a2b8;
   }
   &__img {
     height: 30px;
@@ -132,15 +132,16 @@ export default {
   margin-left: 8px;
 }
 #profile-collapsed {
-  top: 95px;
+  top: 190px;
   right: 44px;
   z-index: 1;
 }
 @media screen and (min-width: 280px) and (max-width: 769px) {
   .profile-btn {
-    top: 20px;
-    right: 20px;
-    height: 25px;
+    top: 150px;
+    right: 30px;
+    height: 35px;
+    border: 1px solid grey;
     padding: 0;
     &__img {
       height: 35px;
@@ -152,8 +153,8 @@ export default {
     margin-left: 0;
   }
   #profile-collapsed {
-    top: 45px;
-    right: 15px;
+    top: 180px;
+    right: 50px;
   }
 }
 @media screen and (min-width: 769px) and (max-width: 992px) {

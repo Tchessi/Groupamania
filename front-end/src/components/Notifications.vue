@@ -10,7 +10,7 @@
         class="notifications-number position-absolute d-flex justify-content-center align-items-center"
         >{{ notificationsList.length }}</span
       >
-      <b-icon icon="bell-fill"></b-icon>
+      <b-icon icon="bell-fill" variant="info"></b-icon>
     </button>
     <b-collapse
       v-if="notificationsList.length"
@@ -21,8 +21,8 @@
     >
       <b-card class="border-0" @click="toggleActions">
         <div
-          v-for="notification in notificationsList"
-          v-bind:key="notification"
+          v-for="(notification, index) in notificationsList"
+          v-bind:key="index"
         >
           <router-link
             :to="{ name: 'OnePost', params: { postId: notification.postId } }"
@@ -107,10 +107,10 @@ export default {
 
 <style lang="scss">
 .notification-btn {
-  top: 50px;
+  top: 150px;
   right: 175px;
   box-shadow: 0px 1px 1px 1px rgba(204, 204, 204, 0.2);
-  background-color: rgba(108, 117, 125, 0.1) !important;
+  background-color: #3d3d3d1c !important;
   border-radius: 100%;
   width: 42px;
   height: 42px;
@@ -118,6 +118,7 @@ export default {
   z-index: 2;
   &:hover {
     background-color: rgba(108, 117, 125, 0.2) !important;
+    border: 1px solid #17a2b8;
   }
   &:focus {
     outline: none;
@@ -134,8 +135,8 @@ export default {
   }
 }
 #notification-collapsed {
-  top: 62px;
-  right: 177px;
+  top: 195px;
+  right: 195px;
   z-index: 1;
   .card-body {
     padding-bottom: 5px;
@@ -143,8 +144,8 @@ export default {
 }
 @media screen and (min-width: 280px) and (max-width: 769px) {
   .notification-btn {
-    top: 17px;
-    right: 65px;
+    top: 150px;
+    right: 80px;
     width: 32px;
     height: 32px;
     .notifications-number {
@@ -155,8 +156,8 @@ export default {
     }
   }
   #notification-collapsed {
-    top: 45px;
-    right: 64px;
+    top: 180px;
+    right: 100px;
     margin-left: 15px;
   }
 }

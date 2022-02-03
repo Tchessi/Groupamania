@@ -107,8 +107,8 @@ export default {
   margin-left: 10px;
 }
 .comment-btn-collapsed {
-  left: 14px;
-  top: 40px;
+  left: 50px;
+  top: 15px;
   width: 200px;
 }
 .input-content:focus {

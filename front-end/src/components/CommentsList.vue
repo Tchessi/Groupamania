@@ -11,8 +11,8 @@
     </button>
     <div
       class="comment mb-2 text-left"
-      v-for="comment in list"
-      v-bind:key="comment"
+      v-for="(comment, index) in list"
+      v-bind:key="index"
     >
       <Comment
         @commentDeleted="removeComment"
@@ -74,10 +74,10 @@ export default {
 
 <style lang="scss">
 .comment-box {
-  background-color: rgba(108, 117, 125, 0.1);
+  background-color: #c8c8c850;
   padding: 0.375rem 0.75rem;
-  border-radius: 0.25rem;
-  margin-bottom: 0;
+  border-radius: 0.5rem;
+  margin-top: 20px;
 }
 .display-comments {
   color: #747474;

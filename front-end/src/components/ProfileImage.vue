@@ -22,7 +22,7 @@ export default {
   border-radius: 100%;
   background: black;
   &__img {
-    transform: scale(1.35);
+    object-fit: cover;
   }
 }
 </style>

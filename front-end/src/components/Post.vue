@@ -165,7 +165,7 @@ export default {
   }
 }
 .btn-block + .btn-block {
-  margin-top: 0px;
+  margin-top: 3px;
 }
 .line {
   display: block;
@@ -190,7 +190,7 @@ export default {
   }
   &:hover {
     color: #747474 !important;
-    background-color: rgba(108, 117, 125, 0.1) !important;
+    background-color: #17a3b828 !important;
   }
 }
 .like-btn {

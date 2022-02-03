@@ -155,13 +155,13 @@ export default {
   },
   methods: {
     onFileSelected() {
-      this.url = URL.createObjectURL(Event.target.files[0]);
+      this.url = URL.createObjectURL(event.target.files[0]);
       this.selectedFile = event.target.files[0];
     },
     triggerInput() {
       this.$refs.fileUpload.click();
     },
-    editUser() {
+    editUser(event) {
       let body = this.input;
       const isFormData = !!this.selectedFile;
       if (isFormData) {
@@ -205,22 +205,25 @@ export default {
   text-align: left;
 }
 .save-btn {
-  background-color: rgba(253, 45, 6, 0.8);
+  background-color: #3f3f3fc7;
   color: white;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   border: none;
   margin-bottom: 1rem;
   padding: 0.375rem 0.75rem;
   &:hover,
   &:focus,
   &:active {
-    background-color: rgb(253, 45, 6);
+    background-color: #17a2b8;
     color: white;
     outline: none;
   }
 }
 .card-body {
   padding-bottom: 0;
+}
+.shadow {
+  box-shadow: 0rem 0.2rem 0.5rem rgba(53, 53, 53, 0.37) !important;
 }
 @media screen and (min-width: 280px) and (max-width: 769px) {
   .create-button {

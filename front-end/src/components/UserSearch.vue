@@ -23,14 +23,14 @@
       @click="triggerInput"
       aria-label="Chercher"
     >
-      <b-icon icon="search"></b-icon>
+      <b-icon icon="search" variant="info"></b-icon>
     </button>
 
     <div
       v-if="usersList.length"
       class="users-list card border-0 position-fixed"
     >
-      <div v-for="user in usersList" v-bind:key="user">
+      <div v-for="(user, index) in usersList" :key="index">
         <router-link :to="{ name: 'UserProfile', params: { userId: user.id } }"
           ><div class="d-flex align-items-center">
             <div class="d-flex text-center">
@@ -85,8 +85,8 @@ export default {
 
 <style lang="scss">
 .search-bar {
-  top: 50px;
-  left: 45px;
+  top: 150px;
+  left: 40px;
   z-index: 2;
 
   .input-group {
@@ -95,9 +95,12 @@ export default {
   &__content {
     padding: 10px 18px;
     box-shadow: 0px 1px 1px 1px rgba(255, 255, 255, 0.842);
-    background-color: rgba(221, 190, 190, 0.1) !important;
+    background-color: #3d3d3d1c !important;
     border-radius: 15px;
     border: none;
+    &:hover {
+      border: 1px solid #17a2b8;
+    }
     .search-text {
       width: 180px;
       &:focus {
@@ -105,15 +108,15 @@ export default {
       }
     }
     .search-btn {
-      color: #fffefe;
+      color: #17a2b8;
     }
   }
 }
 .users-list {
   background: white;
-  top: 73px;
+  top: 218px;
   left: 47px;
-  width: 236px;
+  width: 230px;
   padding: 1rem;
   padding-bottom: 0.2rem;
   z-index: 1;
@@ -121,7 +124,7 @@ export default {
 }
 @media screen and (min-width: 280px) and (max-width: 769px) {
   .search-bar {
-    margin: 0 10px 15px 15px;
+    margin: 0 15px 15px 15px;
     &__content {
       padding: 5px 13px;
       .search-text {
@@ -130,9 +133,9 @@ export default {
     }
   }
   .search-btn-mobile {
-    top: 20px;
-    right: 110px;
-    color: #747474;
+    top: 155px;
+    right: 130px;
+    color: #3d3d3d1c;
     font-size: 1.1rem;
     z-index: 2;
     &:focus {
@@ -140,7 +143,7 @@ export default {
     }
   }
   .users-list {
-    top: 119px;
+    top: 270px;
     left: 15px;
     background: white;
     box-shadow: 0rem 0.2rem 0.5rem rgba(0, 0, 0, 0.08) !important;
@@ -149,6 +152,9 @@ export default {
 @media screen and (min-width: 769px) and (max-width: 992px) {
   .search-bar {
     display: block !important;
+  }
+  svg.bi-search.b-icon.bi.text-info {
+    display: none;
   }
 }
 </style>

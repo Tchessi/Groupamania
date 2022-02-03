@@ -92,9 +92,9 @@ export default {
 
 <style lang="scss">
 .post-button {
-  top: 20px;
+  top: 0px;
   right: 15px;
-  padding: 1px 15px 7px !important;
+  padding: 0px 5px 40px 0 !important;
   background-color: transparent;
   border: 0;
   border-radius: 50rem;
@@ -102,7 +102,6 @@ export default {
   font-weight: 700;
   color: #747474;
   &:hover {
-    background-color: rgba(108, 117, 125, 0.1);
     outline: none;
   }
   &:focus {
@@ -159,7 +158,7 @@ export default {
   .post-button {
     top: 5px;
     right: 7px;
-    padding: 1px 9px 5px !important;
+    padding: 0px 0px 34px !important;
     font-size: 15px !important;
   }
 }
