@@ -1,7 +1,7 @@
 <template>
   <div>
     <b-card
-      class="mx-auto border-0 shadow p-0 p-lg-3 mb-2 mt-2 mb-lg-5 mt-lg-3 bg-white rounded"
+      class="mx-auto border-0 shadow p-0 mb-2 mt-2 mt-lg-3 bg-white rounded"
     >
       <div class="d-flex align-items-center">
         <div class="d-flex mr-3">

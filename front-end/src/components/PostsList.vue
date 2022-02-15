@@ -54,6 +54,9 @@ export default {
 </script>
 
 <style lang="scss">
+.col-12 {
+  margin-top: 15px;
+}
 .post {
   display: block;
   overflow: hidden;

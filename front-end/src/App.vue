@@ -32,17 +32,24 @@ export default {
 </script>
 
 <style lang="scss">
+html {
+  background-color: #17a2b859;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: #17a2b859;
 }
 #nav {
   background: #ffffff;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0px 5px 13px -7px #000000,
+    5px 5px 15px 7px rgba(184, 184, 184, 0);
+  box-shadow: 0px 10px 13px -7px #0000004b,
+    5px 5px 15px 7px rgba(184, 184, 184, 0);
   z-index: 1;
-  margin: 15px;
+  margin: 0px 15px 0 15px;
 }
 @media screen and (min-width: 280px) and (max-width: 767px) {
   body,
@@ -51,8 +58,7 @@ export default {
     font-size: 13px !important;
   }
   #nav #logo {
-    display: flex;
-    margin-left: 30px;
+    padding-left: 10px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 991px) {

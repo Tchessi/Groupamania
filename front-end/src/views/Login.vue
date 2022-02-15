@@ -1,5 +1,11 @@
 <template>
   <div class="page-container">
+    <div class="slogan">
+      <h2>
+        Avec <span class="logotext">Groupomania</span>, <br />
+        restez en contact avec votre équipe.
+      </h2>
+    </div>
     <b-container fluid>
       <b-row class="text-center justify-content-center">
         <b-col cols="12" lg="4">
@@ -8,7 +14,6 @@
           >
             <div class="pt-sm-3 pt-lg-0">
               <b-card-text class="login-text h4">Se connecter</b-card-text>
-
               <b-form>
                 <b-form-group>
                   <b-form-input

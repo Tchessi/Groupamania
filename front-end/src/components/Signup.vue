@@ -1,6 +1,11 @@
 <template>
   <div class="page-container">
-    <div>Avec Groupomania, restez en contact avec votre équipe.</div>
+    <div class="slogan">
+      <h2>
+        Avec <span class="logotext">Groupomania</span>, <br />
+        restez en contact avec votre équipe.
+      </h2>
+    </div>
     <b-container fluid>
       <b-row class="text-center justify-content-center">
         <b-col cols="12" lg="4">
@@ -122,6 +127,11 @@ export default {
 </script>
 
 <style lang="scss">
+span.logotext {
+  color: white;
+  font-weight: 800;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0);
+}
 a {
   text-decoration: none;
   color: #0180ff !important;
@@ -138,6 +148,9 @@ a {
   }
   .login-text {
     font-size: 1.1rem;
+  }
+  .slogan {
+    display: none;
   }
 }
 </style>

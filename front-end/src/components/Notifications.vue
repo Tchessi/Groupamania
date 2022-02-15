@@ -107,17 +107,17 @@ export default {
 
 <style lang="scss">
 .notification-btn {
-  top: 150px;
+  top: 175px;
   right: 175px;
   box-shadow: 0px 1px 1px 1px rgba(204, 204, 204, 0.2);
-  background-color: #3d3d3d1c !important;
+  background-color: #ffffff !important;
   border-radius: 100%;
   width: 42px;
   height: 42px;
-  border: none;
+  border: 2px solid #aedfe6;
   z-index: 2;
   &:hover {
-    background-color: rgba(108, 117, 125, 0.2) !important;
+    background-color: rgb(255, 255, 255) !important;
     border: 1px solid #17a2b8;
   }
   &:focus {

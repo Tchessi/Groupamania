@@ -7,7 +7,18 @@
       class="post-button d-block position-absolute"
       aria-label="Afficher les actions"
     >
-      ...
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="25"
+        height="25"
+        fill="currentColor"
+        class="bi bi-three-dots"
+        viewBox="0 0 16 16"
+      >
+        <path
+          d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+        />
+      </svg>
     </button>
     <b-collapse
       v-bind:class="`${
@@ -93,16 +104,17 @@ export default {
 <style lang="scss">
 .post-button {
   top: 0px;
-  right: 15px;
-  padding: 0px 5px 40px 0 !important;
+  right: 8px;
+  margin-top: 15px;
   background-color: transparent;
   border: 0;
   border-radius: 50rem;
-  font-size: 1.5rem;
+  font-size: 0.5rem;
   font-weight: 700;
   color: #747474;
   &:hover {
     outline: none;
+    background-color: #17a3b828;
   }
   &:focus {
     outline: none;
@@ -156,9 +168,8 @@ export default {
     right: 8px;
   }
   .post-button {
-    top: 5px;
-    right: 7px;
-    padding: 0px 0px 34px !important;
+    top: 0px;
+    right: 5px;
     font-size: 15px !important;
   }
 }

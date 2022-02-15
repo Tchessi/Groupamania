@@ -87,22 +87,23 @@ export default {
 <style lang="scss">
 .profile-btn {
   font-weight: 500;
-  border: none;
+  border: 2px solid #aedfe6;
   color: #000;
-  top: 150px;
+  top: 175px;
   right: 45px;
   height: 45px;
   padding: 5px 5px 5px 16px;
-  background-color: #3d3d3d1c !important;
-  border-radius: 40px;
+  background-color: #ffffff !important;
+  border-radius: 15px;
+
   z-index: 2;
   &:focus {
     outline: none;
   }
   &:hover,
   &:visited {
-    background-color: rgba(108, 117, 125, 0.2) !important;
-    border: 1px solid #17a2b8;
+    background-color: rgb(255, 255, 255) !important;
+    border: 1px solid #aedfe6;
   }
   &__img {
     height: 30px;
@@ -118,7 +119,7 @@ export default {
   &:hover,
   &:focus,
   &active {
-    background-color: rgba(108, 117, 125, 0.1);
+    background-color: #17a3b828;
     outline: none;
   }
   .b-icon.bi {
@@ -132,7 +133,7 @@ export default {
   margin-left: 8px;
 }
 #profile-collapsed {
-  top: 190px;
+  top: 212px;
   right: 44px;
   z-index: 1;
 }

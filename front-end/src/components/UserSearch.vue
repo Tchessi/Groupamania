@@ -85,7 +85,7 @@ export default {
 
 <style lang="scss">
 .search-bar {
-  top: 150px;
+  top: 175px;
   left: 40px;
   z-index: 2;
 
@@ -94,12 +94,12 @@ export default {
   }
   &__content {
     padding: 10px 18px;
-    box-shadow: 0px 1px 1px 1px rgba(255, 255, 255, 0.842);
-    background-color: #3d3d3d1c !important;
+    background-color: #ffffff !important;
     border-radius: 15px;
-    border: none;
+    border: 2px solid #aedfe6;
+    height: 45px;
     &:hover {
-      border: 1px solid #17a2b8;
+      border: 1px solid #aedfe6;
     }
     .search-text {
       width: 180px;
@@ -114,7 +114,7 @@ export default {
 }
 .users-list {
   background: white;
-  top: 218px;
+  top: 225px;
   left: 47px;
   width: 230px;
   padding: 1rem;
