@@ -45,3 +45,6 @@ Pour des tests spécifiques (avec postman par exemple), le backend répond à l'
 # Authentification de l'utilisateur par token avec jsonwebtoken
 
 ```
+## APIdocumentation Postman
+https://documenter.getpostman.com/view/17540434/UVsLRRvc
+
