@@ -6,7 +6,7 @@ Projet 7 de la formation openClassroom , Création d'un réseau social pour l'en
 
 ## Commencer par cloner le projet
 
-git@github.com:Tchessi/Groupomania.git
+git clone git@github.com:Tchessi/Groupomania.git
 
 ## Front-end
 
@@ -45,6 +45,6 @@ Pour des tests spécifiques (avec postman par exemple), le backend répond à l'
 # Authentification de l'utilisateur par token avec jsonwebtoken
 
 ```
-## APIdocumentation Postman
+## API documentation Postman
 https://documenter.getpostman.com/view/17540434/UVsLRRvc
 
