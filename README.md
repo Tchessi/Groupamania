@@ -28,6 +28,24 @@ nodemon server ou node server
 Pour des tests spécifiques (avec postman par exemple), le backend répond à l'adresse: http://localhost:3000
 
 ```
+## Base de données
+
+```
+cd back-end
+mpn i mysql -g 
+
+# Vérifier que le nom d'utilisateur et le mot de passe dans le fichier de configuration config.json correspondent à vos informations d'identification MySQL locales
+
+npx sequelize-cli db:create
+npx sequelize-cli db:migrate
+
+# Pour installer sequilize CLI
+ 
+npm install --save-dev sequelize-cli
+
+
+
+```
 
 ## Technologies utilisées
 
